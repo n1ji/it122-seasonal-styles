@@ -1,32 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seasonal Styles</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-</head>
+ <head>
+     <title>Seasonal Styles</title>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/default.css" />
+  <link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <style type="text/css">
+  
 
-<body>
-    <h1>Seasonal Styles</h1>
-    <div id="myDiv">
-        <p>I'm inside the div</p>
-        <p>I'm inside the div</p>
-        <p>I'm inside the div</p>
+  </style>
+ </head>
+ <body>
+	<header role="banner">
+	    <img src="images/four-seasons.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo" />
+		<h1 class="masthead">Eddie Browser</h1>
+		<nav>
+			<ul>
+				<li class="seasons"><a href="Default">Default</a></li>
+				<li class="seasons"><a href="Spring">Spring</a></li>
+				<li class="seasons"><a href="Summer">Summer</a></li>
+				<li class="seasons"><a href="Fall">Fall</a></li>
+				<li class="seasons"><a href="Winter">Winter</a></li>
+			</ul>
+		</nav>
+	</header>
+     
+   <main class="wrapper">
+    <header><h3>Outfitter for All Seasons!</h3></header>
+    <div class="formSection">
+        <div id="currentDate"></div>
+        <form id="dateForm">
+            <label for="dateField">
+                Input Date: <input type="text" name="dateField" id="dateField" placeholder="MM/DD/YYYY" />
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
     </div>
-</body>
-<script>
-    $("document").ready(function() {
-        $theDiv = $("div#myDiv")
-
-        $theDiv
-        .css("background-color", "blue")
-        .css("border", "2px solid black")
-        .html("<h1>Seasonal Styles</h1>")
-        .append("<p>Welcome to the Seasonal Styles page!</p>")
-        .fadeOut(3000);
-    });
-</script>
+    <p>
+        At Eddie Browser, we craft versatile pieces designed for all seasons. Our signature 4-season trench coat adapts to any weather with zip-out liners and adjustable ventilation. The all-climate chino transitions effortlessly from summer evenings to winter offices with simple accessory changes. Discover how our modular clothing system lets you build a complete wardrobe with just 12 interchangeable core pieces.
+    <img src="images/300x400.png" alt="Season Wear Goes Here" id="wear" />
+    </p>
+    <p>
+        At Eddie Browser, we believe in outfitting both people and planet for the future. Our Eco-Adapt collection features recycled performance fibers that wick moisture in summer while retaining warmth in winter - all from 100% post-consumer materials. The patented modular design means you can replace individual components instead of entire garments, with lifetime repairs included. Even our packaging transforms into garment bags and storage solutions, because true style shouldn't come at the Earth's expense. Dress sharp, travel light, and tread lightly with pieces designed to outlast seasons and trends alike.
+    </p>
+    <p>
+        Master seasonal transitions with our patented layering system. The 3-in-1 convertible suit pairs a breathable tropical wool blazer with removable thermal lining and moisture-wicking dress shirt for boardroom-to-bar versatility. Our climate-responsive fabrics automatically adjust their weave density as temperatures fluctuate, while the neutral capsule color palette ensures every combination works effortlessly. Whether you're facing unexpected cold snaps or unseasonable warmth, Eddie Browser's adaptive designs keep you perfectly dressed for whatever the forecast brings.
+    </p>
+    <p>
+        Eddie Browser's foundation lies in our seasonless staples - pieces designed to transcend trends and weather alike. Our performance-blend Oxford shirt features hidden ventilation panels for summer and a brushed cotton version for winter, maintaining the same crisp silhouette year-round. The magic is in the details: magnetic cuff closures that work with gloves, colorfast dyes that resist sun bleaching, and reinforced stress points that outlast ordinary garments. These aren't just clothes - they're solutions dressed in classic tailoring.
+    </p>
+    <footer>
+    <p><small>&copy; 2025 by 
+        Myra Rudy, All Rights Reserved ~ 
+        <a id="html-checker" href="#">Check HTML</a> ~ 
+        <a id="css-checker" href="#">Check CSS</a></small>
+    </p>
+    </footer>
+  </main>
+  <script src="js/main.js"></script>
+  </body>
 </html>
-
